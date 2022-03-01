@@ -27,3 +27,5 @@ frontend/yarn-debug.log*
 frontend/yarn-error.log*
 
 frontend/package-lock.json
+
+*__pycache__*
