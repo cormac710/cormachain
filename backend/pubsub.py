@@ -1,4 +1,4 @@
-import time
+import os
 
 from pubnub.pubnub import PubNub
 from pubnub.pnconfiguration import PNConfiguration
@@ -9,8 +9,12 @@ from exceptions.blockchain_validation_exceptions import BlockChainReplacementExc
 from wallet.transaction import Transaction
 
 # TODO: as env variables
-subscribe_key = ''
-publish_key = ''
+subscribe_key = os.environ.get('subscribe_key')
+publish_key = os.environ.get('publish_key')
+
+print('--------')
+print(subscribe_key)
+print(publish_key)
 
 CHANNELS = {
     'TEST': 'TEST',

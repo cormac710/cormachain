@@ -30,6 +30,14 @@ python -m api.app
 export SEED=True
 python -m api.app
 ```
+### set up pubsub 
+You will have to signup to [pubsub](https://cloud.google.com/pubsub/docs/overview) and get you subscribe and publish keys
+
+Export as env variables before running the app
+```
+export subscribe_key='<my_subscribe_key>'
+export publish_key='<my_publish_key>'
+```
 
 ### Run a peer instance
 

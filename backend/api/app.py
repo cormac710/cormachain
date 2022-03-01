@@ -108,7 +108,8 @@ def get_transactions():
 if os.environ.get('PEER') == 'true':
     PORT = random.randint(5001, 6000)
 
-    full_chain = requests.get(f'http://localhost:{ROOT_PORT}/blockchain')
+    full_chain = requests.get(f'http://127.0.0.1:{ROOT_PORT}/blockchain')
+    print(full_chain)
     converted_chain = Cormachain.from_json(full_chain.json())
     try:
         cormachain.replace_chain(converted_chain.chain)
