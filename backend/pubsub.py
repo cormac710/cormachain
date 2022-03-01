@@ -9,8 +9,8 @@ from exceptions.blockchain_validation_exceptions import BlockChainReplacementExc
 from wallet.transaction import Transaction
 
 # TODO: as env variables
-subscribe_key = 'sub-c-e66947e8-1bcb-11ec-a975-faf056e3304c'
-publish_key = 'pub-c-11d3331a-b50d-46fc-ae46-2c63043cb4c7'
+subscribe_key = ''
+publish_key = ''
 
 CHANNELS = {
     'TEST': 'TEST',
