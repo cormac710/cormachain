@@ -1,0 +1,7 @@
+cryptography==36.0.1
+Flask==1.1.2
+Flask_Cors==3.0.10
+itsdangerous==2.0.1
+pubnub==4.1.6
+pytest==7.0.1
+requests==2.26.0
